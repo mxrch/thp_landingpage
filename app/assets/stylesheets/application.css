@@ -162,25 +162,25 @@
 }
 
 
-.footer-heart
+.footer-main
 {
-  font-size:13px;
-  margin-top:15px;
-  justify-content:center;
-  display:flex;
+  margin-right:50px;
+  padding-top:15px;
+  text-align:center;
   color:white;
 }
 
-#heart
-{
-    padding-left:20px;
-    padding-right:20px;
+.footer-txt{
+    font-size:15px;
+    margin-top:5px;
+    font: weight 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer
 {
     position:relative;
-    height:250px;
+    height:280px;
     width:100%;
     background-color:#00b894;
     font-family: 'Anton', sans-serif;
@@ -192,7 +192,7 @@
 }
 
 .footer-second{
-    margin-top:125px;
+    margin-top:30px;
 
 }
 
