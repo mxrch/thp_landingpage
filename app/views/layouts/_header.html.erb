@@ -1,0 +1,25 @@
+<% if user_signed_in? %>
+<div class="header">
+    <div class="header-container">
+    <a class="logo-link" href="/"><%= image_tag("Logo.png",size: "400x80", :alt => "Logo FindForMe",:class => "header-logo") %><a>
+        <div class="header-link">
+            <a class="header-link connectIns" href=""><%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class:"header-link connectIns " %></a>
+            <a class="header-link connectIns " href="/Profil">Profil</a>
+            <a class="header-link connectIns " href="/FAQ">FAQ</a>
+            <a class="header-link connectIns " href="/">Trouver une Entreprise</a>
+        </div>
+    </div>
+</div>
+
+<% else %>
+<div class="header">
+    <div class="header-container">
+    <a class="logo-link" href="/"><%= image_tag("Logo.png",size: "400x80", :alt => "Logo FindForMe",:class => "header-logo") %></a>
+        <div class="header-link">
+            <a class="header-link connectIns " href="/login">Connexion</a>
+            <a class="header-link connectIns " href="/users/sign_up">Inscription</a>
+            <a class="header-link connectIns " href="/FAQ">FAQ</a>
+        </div>
+    </div>
+</div>
+<% end %>

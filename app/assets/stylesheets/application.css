@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
+
+
+.header
+{
+    height:85px;
+    background-color:#00b894;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.header-container
+{
+    width:80%;
+    margin:auto;
+}
+
+.header-title
+{
+    float:left;
+    font-family: 'Poor Story', cursive;
+    line-height:85px;
+    color:white;
+}
+
+.em-mag{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.header-link
+{
+    float:right;
+    line-height:85px;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    padding-left:10px;
+    font-size:25px;
+
+}
+
+.header-logo
+{
+    float:left;
+}
+
+.header-logo:active,
+.header-logo:hover{
+    transform: scale(1.02, 1.02);
+   
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.header a{
+  color:white;
+  margin-right:10px;
+  text-decoration:none;
+}
+.header a:hover,
+.header a:active{
+  color:#00eabb;
+  border-bottom:2px solid white;
+}
+
+.connectIns {
+    font-size:20px;
+    font-weight: 600;
+}
+
+/* HEADER */
+
+
+/* TITLE / HEADING */
+
+
+.main-title{
+  margin-bottom:50px;
+  font-family: 'Poppins', sans-serif;
+  text-align:center;
+}
+
+/* ------------- */
+/* TITLE / HEADING */
+
+/* USER / EDIT */
+
+
+.main-title{
+    margin-bottom:50px;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+  }
+  
+  /* ------------- */
+  /* USER / EDIT */
+
+.card{
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:20px; 
+}
+  
+/* Home */
+
+  .container-cent{
+    margin-top:200px;
+    margin-bottom:33em;
+  }
+
+  .polbatt{
+    font-family: 'Poor Story', cursive;
+  }
+/* Home */
+
+/* FOOTER */
+
+.footer-container
+{
+    width:90%;
+    margin:auto;
+    justify-content:center;
+    display:inline;
+}
+
+.footer-link-container
+{
+   display:flex;
+   justify-content:center;
+   width:80%;
+   margin:auto;
+}
+
+.footer-heart-container
+{
+   display:flex;
+   justify-content:center;
+   width:80%;
+   margin:auto;
+   padding-top:25px;
+}
+
+.footer-link
+{
+  color:white;
+  font-size:25px;
+  text-decoration:none;
+  display:flex;
+  justify-content:center;
+  padding-right:25px;
+  padding-top:5px;
+}
+
+.footer-heart
+{
+  font-size:13px;
+  margin-top:15px;
+  justify-content:center;
+  display:flex;
+  color:white;
+}
+
+#heart
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.footer
+{
+    position:relative;
+    height:100px;
+    width:100%;
+    background-color:#00b894;
+    font-family: 'Anton', sans-serif;
+    margin-top:10em;
+    bottom:0;
+}
+
+/* ------------- */
+/* FOOTER */
+
+/* A BUTTON */
+
+#ins{
+    float:right;
+    background-color:transparent;
+    font-family: 'Poppins', sans-serif;
+    border:2px solid #00b894;
+    margin-right:350px;
+    color: #00b894;
+  }
+  
+  #con{
+    float:left;
+    background-color:transparent;
+    font-family: 'Poppins', sans-serif;
+    border-color:#00b894;
+    margin-left:350px;
+    border:2px solid #00b894;
+    color: #00b894;
+  }
+
+  #dec{
+    background-color:transparent;
+    font-family: 'Poppins', sans-serif;
+    border-color:#00b894;
+    border:2px solid #00b894;
+    color: #00b894;
+  }
+
+.btn-primary{
+    background-color:#00b894;
+    border-color:#00b894;
+    background-color:transparent;
+    font-family: 'Poppins', sans-serif;
+    border-color:#00b894;
+    border:2px solid #00b894;
+    color: #00b894;
+}
+
+.btn-primary:active,
+.btn-primary:hover{
+    background-color:#00b894;
+    border-color:#00b894;
+    color:white;
+}
+#dec:active,
+#dec:hover,
+#con:active,
+#con:hover,
+#ins:active,
+#ins:hover{
+    background-color:#00b894;
+    border-color:#00b894;
+    color:white;
+}
+
+/* ------------- */
+/* A BUTTON */
+
+/* ALERT */
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    padding-bottom:0px;
+    margin-top:10px;
+    text-align: center;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    padding-bottom:0px;
+    margin-top:10px;
+    text-align: center;
+ }
+
+.alert-success {
+    background-color: #00b894;
+    border-color: #00b894;
+    color: white;
+    padding-bottom:0px;
+    margin-top:10px;
+    text-align: center;
+ }
+
+.alert-notice {
+    background-color: #00b894;
+    border-color: #00b894;
+    color: white;
+    padding-bottom:0px;
+    margin-top:10px;
+    text-align: center;
+ }
+
+ /* ------------- */
+/* ALERT */
+
+
+/* VIEW PROFIL  */
+
+.main-title{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-profil{
+    margin-top:9em;
+    margin-bottom:39.4em;
+}
+
+/* VIEW FAQ  */
+ /* ------------- */
+
+
+/* VIEW FAQ  */
+
+.main-title-faq{
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-faq{
+    font-family: 'Oswald', sans-serif;
+    border-bottom:1.5px solid rgb(155, 155, 155, 0.6);
+    width:10%;
+    margin-right:25px;
+    padding-bottom:5px;
+}
+
+.text-faq{
+    margin-top:1.25px;
+    margin-bottom:1.5em;
+}
+
+
+
+.faq{
+    margin-top:9em;
+    margin-bottom:15em;
+}
+
+/* VIEW FAQ  */
+ /* ------------- */
+
+
+/* FORMU INS / CONNE */
+
+
+.foredit{
+    margin-top:9em;
+    margin-bottom:17.1em;
+    padding:60px 40px ;
+    border:1.5px solid #00b894;
+    border-radius:5px;
+    -webkit-box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+    -moz-box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+    box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+}
+
+.forct{
+    margin-top:9em;
+    margin-bottom:17.1em;
+    padding:60px 40px ;
+    border:1.5px solid #00b894;
+    border-radius:5px;
+    -webkit-box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+    -moz-box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+    box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+}
+
+.forins{
+    margin-top:5em;
+    margin-bottom:11.5em;
+    padding:60px 40px ;
+    border:1.5px solid #00b894;
+    border-radius:5px;
+    -webkit-box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+    -moz-box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+    box-shadow: 7px 4px 21px 5px rgba(0,0,0,0.27);
+}
+
+.connex{
+    margin-top:2px;
+    margin-bottom:4px;
+}
+
+ /* ------------- */
+/* FORMU INS / CONNE */
