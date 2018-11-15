@@ -1,6 +1,8 @@
 <% provide(:title, "Profil") %>
 
-<div class="container-profil">
-    <h1> Bienvenue <strong><%= current_user.firstname %> <i class="em em-relaxed"></i></h1>
-    <a class="btn btn-primary" href="/users/edit">Editer mon Profil</a>
+<div class="container">
+    <div class="container-profil">
+        <h1> Bienvenue <strong><%= current_user.firstname %> <i class="em em-relaxed"></i></h1>
+        <a class="btn btn-primary" href="/users/edit">Editer mon Profil</a>
+    </div>
 </div>
