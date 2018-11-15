@@ -1,0 +1,16 @@
+<%= form_with(model: mail) do |form| %>
+
+<div class="card" style="margin: 0 auto; width: 18rem; text-align: center;">
+	<br>
+	<h4>Entrez votre email :</h4>
+	<br>
+  <form action="/gossips/new">
+    <div class="form-group">
+    	<h5>Your name :</h5>
+      <%= form.text_field :email, placeholder:"Email", label: "Email", label_class:"form_label" %>
+    </div>
+	<br>
+      <%= form.button :submit, class:"bg-success btn btn-treehouse" %>
+  </form>
+</div>
+<% end %>
