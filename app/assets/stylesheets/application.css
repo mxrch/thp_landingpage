@@ -404,8 +404,16 @@ h1 {
 
 
 .faq{
-    margin-top:9em;
-    margin-bottom:15em;
+
+  background-image: linear-gradient(to right top, #232323, #2f2e2f, #3c3a3b, #494647, #575252);
+  color: white;
+  margin-top:9em;
+  margin-bottom:15em;
+  padding: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 15px;
 }
 
 /* VIEW FAQ  */
