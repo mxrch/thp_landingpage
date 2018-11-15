@@ -40669,3 +40669,404 @@ Completed 200 OK in 186ms (Views: 176.1ms | ActiveRecord: 0.0ms)
 
 
   [1m[36mMail Load (0.4ms)[0m  [1m[34mSELECT  "mails".* FROM "mails" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:12:07 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 233ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mails/new.html" for 127.0.0.1 at 2018-11-15 23:12:11 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#new as HTML
+  Rendering mails/new.html.erb within layouts/application
+  Rendered mails/_form.html.erb (5.1ms)
+  Rendered mails/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 213ms (Views: 192.4ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/mails" for 127.0.0.1 at 2018-11-15 23:12:19 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pG+SR4m7N0Nqy6c6ZuSYcdgbpmeCJTJYoWehteDy4u+d6cOjtGfZKb1pep7sfVbJCv8TmcA/LIns2rwe3vqruA==", "mail"=>{"email"=>"omegad@gmail.com"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[36mMail Create (0.6ms)[0m  [1m[32mINSERT INTO "mails" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "omegad@gmail.com"], ["created_at", "2018-11-15 22:12:20.017694"], ["updated_at", "2018-11-15 22:12:20.017694"]]
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[35m (25.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mails_controller.rb:11
+Redirected to http://localhost:9393/
+Completed 200 OK in 48ms (ActiveRecord: 31.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:12:20 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 195ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:12:41 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 206ms (Views: 196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mails/new.html" for 127.0.0.1 at 2018-11-15 23:12:45 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#new as HTML
+  Rendering mails/new.html.erb within layouts/application
+  Rendered mails/_form.html.erb (4.1ms)
+  Rendered mails/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 203ms (Views: 177.9ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/mails" for 127.0.0.1 at 2018-11-15 23:12:51 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WlLrna1ekGfb5pLwbgEXtLWA99ezjZH4UBUpo7sFdJ5j1Lp5kIJ+DQxET1TkmNkMZ2RCKfGXjykdqDQIhQ09yQ==", "mail"=>{"email"=>"hahaha@prout.fr"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[36mMail Create (0.6ms)[0m  [1m[32mINSERT INTO "mails" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "hahaha@prout.fr"], ["created_at", "2018-11-15 22:12:51.699289"], ["updated_at", "2018-11-15 22:12:51.699289"]]
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[35m (65.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mails_controller.rb:11
+Redirected to http://localhost:9393/
+Completed 200 OK in 87ms (ActiveRecord: 71.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:12:52 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 176ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mails/new.html" for 127.0.0.1 at 2018-11-15 23:13:22 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#new as HTML
+  Rendering mails/new.html.erb within layouts/application
+  Rendered mails/_form.html.erb (3.0ms)
+  Rendered mails/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 239ms (Views: 219.5ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/mails/new.html" for 127.0.0.1 at 2018-11-15 23:13:24 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#new as HTML
+  Rendering mails/new.html.erb within layouts/application
+  Rendered mails/_form.html.erb (2.7ms)
+  Rendered mails/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 195ms (Views: 171.8ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/mails" for 127.0.0.1 at 2018-11-15 23:13:25 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WlLrna1ekGfb5pLwbgEXtLWA99ezjZH4UBUpo7sFdJ5j1Lp5kIJ+DQxET1TkmNkMZ2RCKfGXjykdqDQIhQ09yQ==", "mail"=>{"email"=>"hahaha@prout.fr"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[36mMail Create (0.6ms)[0m  [1m[32mINSERT INTO "mails" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "hahaha@prout.fr"], ["created_at", "2018-11-15 22:13:25.343649"], ["updated_at", "2018-11-15 22:13:25.343649"]]
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[35m (57.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mails_controller.rb:11
+Redirected to http://localhost:9393/
+Completed 200 OK in 80ms (ActiveRecord: 64.3ms)
+
+
+Started POST "/mails" for 127.0.0.1 at 2018-11-15 23:13:29 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xeNwLeVh3JByZ5iv8LC3Y8yNXhpYB02qMMb9ct3ByZleiAtYyhxFojrbWAa6OiTOVOlI5FeXMfA33KCPVkgz8Q==", "mail"=>{"email"=>"sfqsf"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[36mMail Create (0.6ms)[0m  [1m[32mINSERT INTO "mails" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "sfqsf"], ["created_at", "2018-11-15 22:13:29.599850"], ["updated_at", "2018-11-15 22:13:29.599850"]]
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[35m (24.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mails_controller.rb:11
+Redirected to http://localhost:9393/
+Completed 200 OK in 46ms (ActiveRecord: 30.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:13:30 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 180ms (Views: 171.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:13:39 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 208ms (Views: 199.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mails/new.html" for 127.0.0.1 at 2018-11-15 23:13:43 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#new as HTML
+  Rendering mails/new.html.erb within layouts/application
+  Rendered mails/_form.html.erb (4.4ms)
+  Rendered mails/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (6.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 286ms (Views: 259.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/mails/mails/new.html" for 127.0.0.1 at 2018-11-15 23:13:44 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/mails/mails/new.html"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.6) lib/rack/lint.rb:49:in `_call'
+rack (2.0.6) lib/rack/lint.rb:37:in `call'
+rack (2.0.6) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.6) lib/rack/common_logger.rb:33:in `call'
+shotgun (0.9.2) lib/shotgun/loader.rb:86:in `proceed_as_child'
+shotgun (0.9.2) lib/shotgun/loader.rb:31:in `call!'
+shotgun (0.9.2) lib/shotgun/loader.rb:18:in `call'
+shotgun (0.9.2) lib/shotgun/favicon.rb:12:in `call'
+shotgun (0.9.2) lib/shotgun/static.rb:14:in `call'
+rack (2.0.6) lib/rack/urlmap.rb:68:in `block in call'
+rack (2.0.6) lib/rack/urlmap.rb:53:in `each'
+rack (2.0.6) lib/rack/urlmap.rb:53:in `call'
+rack (2.0.6) lib/rack/builder.rb:153:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/mails/new.html" for 127.0.0.1 at 2018-11-15 23:13:57 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#new as HTML
+  Rendering mails/new.html.erb within layouts/application
+  Rendered mails/_form.html.erb (2.6ms)
+  Rendered mails/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 181ms (Views: 161.2ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/mails" for 127.0.0.1 at 2018-11-15 23:14:02 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MailsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6q3pk3AUN7Ld+hbbf2pwYpI9McpKt3s9joWR50K7iLBxxpLmX2mugJVG1nI14OPPClknNEUnB2eJn8wayTJy2A==", "mail"=>{"email"=>"loul"}, "button"=>""}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[36mMail Create (0.8ms)[0m  [1m[32mINSERT INTO "mails" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "loul"], ["created_at", "2018-11-15 22:14:02.837675"], ["updated_at", "2018-11-15 22:14:02.837675"]]
+  ↳ app/controllers/mails_controller.rb:11
+  [1m[35m (43.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/mails_controller.rb:11
+Redirected to http://localhost:9393/
+Completed 200 OK in 66ms (ActiveRecord: 50.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:14:03 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 173ms (Views: 164.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-15 23:14:37 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 193ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (327.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "FindForMe_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (324.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "FindForMe_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (1102.1ms)[0m  [1m[35mCREATE DATABASE "FindForMe_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1020.4ms)[0m  [1m[35mCREATE DATABASE "FindForMe_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "mails" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (219.6ms)[0m  [1m[35mCREATE TABLE "mails" ("id" bigserial primary key, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (252.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "firstname" character varying, "lastname" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (73.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:24
+  [1m[35m (73.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:24
+  [1m[35m (142.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (9.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20181115210745)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (10.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20181106155630);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (131.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 22:14:51.713095"], ["updated_at", "2018-11-15 22:14:51.713095"]]
+  ↳ db/schema.rb:13
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "mails" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (140.6ms)[0m  [1m[35mCREATE TABLE "mails" ("id" bigserial primary key, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:24
+  [1m[35m (141.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "firstname" character varying, "lastname" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:24
+  [1m[35m (62.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:24
+  [1m[35m (63.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/schema.rb:24
+  [1m[35m (120.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (9.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20181115210745)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (10.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20181106155630);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (121.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-15 22:14:52.439718"], ["updated_at", "2018-11-15 22:14:52.439718"]]
+  ↳ db/schema.rb:13
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-11-15 22:14:52.449619"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9

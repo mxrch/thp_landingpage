@@ -321,7 +321,7 @@ h1 {
 /* ALERT */
 
 .alert-error {
-    background-color: #f2dede;
+    background-color: red;
     border-color: #eed3d7;
     color: #b94a48;
     padding-bottom:0px;
@@ -330,7 +330,7 @@ h1 {
  }
 
 .alert-alert {
-    background-color: #f2dede;
+    background-color: red;
     border-color: #eed3d7;
     color: #b94a48;
     padding-bottom:0px;
@@ -339,7 +339,7 @@ h1 {
  }
 
 .alert-success {
-    background-color: #00b894;
+    background-color: green;
     border-color: #00b894;
     color: white;
     padding-bottom:0px;
@@ -348,7 +348,7 @@ h1 {
  }
 
 .alert-notice {
-    background-color: #00b894;
+    background-color: green;
     border-color: #00b894;
     color: white;
     padding-bottom:0px;
