@@ -4,13 +4,36 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
 
 
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+  background-image: url(http://image.noelshack.com/fichiers/2018/46/4/1542302103-design.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .header
 {
     height:85px;
-    background-color:#00b894;
+    background-image: url(http://image.noelshack.com/fichiers/2018/46/4/1542302103-design.png);
     -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .header-container
@@ -107,14 +130,46 @@
   
 /* Home */
 
+h1 {
+
+  font-size: 50px;
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+
+}
+
   .container-cent{
-    margin-top:200px;
+    margin-top:20px;
     margin-bottom:33em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   .polbatt{
     font-family: 'Poor Story', cursive;
   }
+
+ 
+
+.block-logged {
+
+  background-color: white;
+
+}
+
+.block-signup{
+
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+
+
 /* Home */
 
 /* FOOTER */
@@ -182,8 +237,8 @@
     position:relative;
     height:280px;
     width:100%;
-    background-color:#00b894;
-    font-family: 'Anton', sans-serif;
+    background-image: linear-gradient(to right bottom, #5892cd, #b090d3, #ef91ba, #ffa293, #fdc479);
+    font-family: 'Poppins', sans-serif;
     margin-top:10em;
     bottom:0;
     -webkit-box-shadow: 0px -1px 18px 0px rgba(0,0,0,0.75);
@@ -236,6 +291,7 @@
     border-color:#00b894;
     border:2px solid #00b894;
     color: #00b894;
+    border-radius: 10px;
 }
 
 .btn-primary:active,
@@ -303,7 +359,14 @@
 /* VIEW PROFIL  */
 
 .main-title{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Arial', sans-serif;
+}
+
+.title-signup {
+
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+
 }
 
 .container-profil{
