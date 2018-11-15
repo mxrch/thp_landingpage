@@ -1,3 +1,5 @@
+<% unless controller_name == "landing" %>
+
 <div class="footer">
     <div class="footer-container">
         <div class="footer-main">
@@ -6,9 +8,9 @@
                     <div class="col-sm">
                     <a class="logo-link" href="/"><%= image_tag("Logo.png",size: "300x60", :alt => "Logo FindForMe",:class => "header-logo") %><a>
                     <p class="footer-txt">FindForMe est la première plateforme de recherche de stage ou de contract d'alternance créer par des étudiants pour des étudiants</p>
-                    </div>
                     <div class="col-sm">
                     <h2>Information</h2>
+                    </div>
                     <a>Test</a>
                     </div>
                     <div class="col-sm">
@@ -27,3 +29,4 @@
         </div>
     </div>
 </div>
+<% end %>

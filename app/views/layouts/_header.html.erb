@@ -1,4 +1,6 @@
 <% if user_signed_in? %>
+<% unless controller_name == "landing" %>
+
 <div class="header">
     <div class="header-container">
     <a class="logo-link" href="/"><%= image_tag("Logo.png",size: "400x80", :alt => "Logo FindForMe",:class => "header-logo") %><a>
@@ -22,4 +24,5 @@
         </div>
     </div>
 </div>
+<% end %>
 <% end %>
