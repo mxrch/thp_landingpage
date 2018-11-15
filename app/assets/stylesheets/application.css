@@ -25,9 +25,6 @@ body {
 {
     height:85px;
     background-image: url(http://image.noelshack.com/fichiers/2018/46/4/1542302103-design.png);
-    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -239,9 +236,6 @@ h1 {
     font-family: 'Poppins', sans-serif;
     margin-top:10em;
     bottom:0;
-    -webkit-box-shadow: 0px -1px 18px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px -1px 18px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px -1px 18px 0px rgba(0, 0, 0, 0.75);
     background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -429,9 +423,7 @@ h1 {
     padding:60px 40px ;
     border:1.5px solid #00b894;
     border-radius:5px;
-    -webkit-box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
-    -moz-box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
-    box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
+
 }
 
 .forct{
@@ -442,9 +434,6 @@ h1 {
     padding:60px 40px ;
     border:1.5px solid white;
     border-radius:5px;
-    -webkit-box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
-    -moz-box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
-    box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
 }
 
 .forins{
@@ -455,9 +444,6 @@ h1 {
     padding:60px 40px ;
     border:1.5px solid white;
     border-radius:5px;
-    -webkit-box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
-    -moz-box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
-    box-shadow: 7px 4px 21px 5px rgba(0, 0, 0, 0.27);
 }
 
 .connex{
