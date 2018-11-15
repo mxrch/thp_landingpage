@@ -390,7 +390,7 @@ h1 {
 
 .title-faq{
     font-family: 'Oswald', sans-serif;
-    border-bottom:1.5px solid rgb(155, 155, 155, 0.6);
+    border-bottom:1.5px solid rgba(155, 155, 155, 0.6);
     width:10%;
     margin-right:25px;
     padding-bottom:5px;
