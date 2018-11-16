@@ -14,3 +14,9 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    $("div.header-slogan-txt").fadeOut(1);
+    $("div.header-slogan-txt").removeClass("hidden");
+    $("div.header-slogan-txt").fadeIn(1000);     
+});

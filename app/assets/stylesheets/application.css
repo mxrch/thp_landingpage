@@ -4,9 +4,19 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
 
 
+body, html
+{
+    margin:0;
+    padding:0;
+}
+
 .header
 {
+
+    display:flex;
+    position: relative;
     height:85px;
+    z-index: 100;
     background-color:#00b894;
     -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
@@ -153,8 +163,17 @@
   justify-content:center;
   padding-right:55px;
   padding-top:5px;
-
 }
+.city-f{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+.city-f:active,
+.city-f:hover{
+    color:#00eabb;
+    text-decoration:none;
+}
+
 .footer-link:active,
 .footer-link:hover{
     color:#00eabb;
@@ -180,11 +199,11 @@
 .footer
 {
     position:relative;
+    display: block;
     height:280px;
     width:100%;
     background-color:#00b894;
     font-family: 'Anton', sans-serif;
-    margin-top:10em;
     bottom:0;
     -webkit-box-shadow: 0px -1px 18px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 18px 0px rgba(0,0,0,0.75);
@@ -349,6 +368,7 @@
 
 
 .foredit{
+    height:800px;
     margin-top:9em;
     margin-bottom:17.1em;
     padding:60px 40px ;
@@ -371,6 +391,7 @@
 }
 
 .forins{
+    
     margin-top:5em;
     margin-bottom:11.5em;
     padding:60px 40px ;
@@ -388,3 +409,174 @@
 
  /* ------------- */
 /* FORMU INS / CONNE */
+
+
+
+
+.first-d{
+    overflow:hidden;
+    height:900px;
+    width:100%;
+    z-index:-100;
+    background: linear-gradient(135deg, rgba(34,68,171,1) 0%, rgba(30,124,150,1) 49%, rgba(30,124,150,1) 49%, rgba(0,184,148,1) 100%);
+}
+
+#first-d-vids{
+    background-position: center center;
+    position: fixed;
+    opacity:0.30;
+    overflow:hidden;
+    top:0;
+    z-index:0;
+}
+
+.header-slogan-h1{
+    font-family: 'Oswald', sans-serif;
+    font-size:70px;
+}
+
+.header-slogan
+{
+    visibility: visible;
+
+    text-align:center;
+    z-index: 100;
+    position: relative;;
+    display:block;
+    margin-top:250px;
+}
+
+.header-slogan-txt
+{
+    color:white;
+    position:relative;
+    font-size:20px; 
+    margin-bottom:70px;
+}
+
+.header-slogan-btn:hover
+{
+
+    background-color:transparent;
+    color:#00b894;
+    border:2px solid #00b894;;
+    text-decoration:none;
+}
+
+.header-slogan-btn
+{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    background:#00b894;
+    border-radius:3px;
+}
+
+.third-d{
+    height:450px;
+    background-color:white;
+    position: relative;
+}
+
+.container-inf{
+    display:flex;
+    justify-content:center;
+}
+
+.container-inf i{
+   font-size:80px;
+   color:#00b894;
+}
+
+.container-inf h2{
+    padding-top:15px;
+    font-weight:bold
+}
+
+.container-inf span{
+    font-size: 75px;
+    font-weight:bold
+}
+
+#stg{
+    padding-left:5px;
+}
+
+#inf-map{
+    padding-left:22px;
+}
+
+#inf-users{
+    padding-left:7px;
+}
+
+.inf-row{
+    padding-top:80px;
+}
+
+.city-inf{
+    margin-right:100px;
+}
+
+.stg-inf{
+    margin-left:100px;
+}
+
+
+.second-d{
+    height:900px;
+    background-color:white;
+    position: relative;
+}
+
+.container-tem{
+    display:flex;
+    width:80%;
+    justify-content:center;
+    padding-top:80px;
+    margin-left:180px;
+}
+
+.container-tem h2{
+    background-color:#00b894;
+}
+
+.container-tem blockquote{
+    margin-top:30px;
+}
+
+blockquote {
+    background-color:rgb(0, 184, 148, 0.8);
+    border-radius: 5px;
+}
+
+blockquote p {
+    padding: 20px;
+    font-size:18px;
+    color:white;
+    font-weight:bold;
+}
+
+#name-tem{
+    font-weight:bold;
+}
+
+.tem-second{
+    margin-top:250px;
+}
+
+.PP1{
+    margin-top:50px;
+    position: relative;
+    border-radius:250px;
+    border:3px solid #00b894;
+}
+
+.PP2{
+    margin-top:50px;
+    position: relative;
+    border-radius:250px;
+    border:3px solid #00b894;
+    margin-left:300px;
+}
