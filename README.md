@@ -1,24 +1,18 @@
-# README
+# Find For Me
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Plateforme pour mettre en contact des entreprises, fontionnaires et chercheurs de stages.
 
-Things you may want to cover:
+1er site destiné aux entreprises :
+http://185.216.25.230:9292/
 
-* Ruby version
 
-* System dependencies
+2e site destiné aux fonctionnaires :
+http://185.216.25.230:9393/
 
-* Configuration
+3e site destiné aux étudiants :
+http://185.216.25.230:9494/
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Made in Strasbourg with 
+## @mxrch, @Piratecool, @zOmegad, @Runefire32 and @OwwlMann
+## Enjoy 
